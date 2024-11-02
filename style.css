@@ -1,0 +1,236 @@
+/*импорт шрифтов*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(img/bg.png);
+    background-position: center;
+    background-size: cover;
+    background-color: #050729be;
+}
+
+/* верхние кнопки*/
+.top_butoon{
+    background-color: #a276ff;
+    position: fixed; /*было absolute - ?*/
+    top:0;
+    right: 100px; 
+    height: 50px;
+    width: 100px;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+.top_butoon div{
+    color: white;
+    float: left;
+    padding: 12px 17px;
+}
+
+.top_butoon div a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/*главный контейнер и основные элементы*/
+.container{
+    width: 100%;
+}
+
+
+.sidebar{
+    width: 20%;
+    height: 100vh;
+    background-color: #0b0b0d76;
+    float:left;
+    position: fixed;
+}
+
+.content{
+    width: 80%;
+    margin-left: 20%;
+    float:left;
+}
+
+.container-in{
+    width: 80%;
+    margin: 150px auto;
+    color:white;
+    /*background-color: rgb(255, 136, 0);*/
+}
+
+/*элементы container-in*/
+h1{
+    font-size: 42px;
+    line-height: 60px;
+    font-family: "Oswald", sans-serif;
+}
+
+h1 span{
+    font-size: 70px;
+    color: #a276ff;
+    text-transform: uppercase;
+}
+
+.container-in p{
+    margin-top: 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+    }
+
+.btn{
+    margin-top: 50px;
+    width: 250px;
+    line-height: 50px;
+    font-family: "Oswald", sans-serif;
+    border: 2px solid white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container-img-content{
+    margin-top: 50px;
+    height: 160px;
+    display: flex;
+    justify-content:space-between ;
+}
+
+.block{
+    width: 20%;
+    /*height: 200px;*/
+    /*background-color: white;*/
+    
+}
+
+.block img{
+    width: 100%;
+    border: 3px solid #a276ff;
+    border-radius: 20px;
+    box-shadow: 3px 3px 15px black;
+    
+}
+
+.news-triangle{
+    margin-top: 10px;
+    position: relative;
+    height: 100px;
+}
+.container-in h2{
+    float: left;
+    margin-top: 50px;
+    font-size: 32px;
+    font-family: "Oswald", sans-serif;
+}
+
+.triangle{
+    float: left;
+    margin-top: 63px;
+    margin-left: 15px;
+}
+
+/*2й контейнер и его элеиенты*/
+.container-in-2{
+    width: 70%;
+    margin: 150px auto;
+    background-color: gainsboro;
+    padding: 50px;
+    border-radius: 30px;
+    /*height: 1000px;*/
+    display: flex;
+    justify-content:space-between 
+}
+
+.col{
+    width: 45%;
+}
+
+.container-in-2 h2{
+    font-size: 32px;
+    font-family: "Oswald", sans-serif;
+}
+
+.container-in-2 h3{
+    font-size: 24px;
+    font-family: "Oswald", sans-serif;
+    margin-top: 10px;
+}
+
+.container-in-2 p{
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    }
+
+.hr-line{
+    color: #a276ff;
+    border: 3px solid #a276ff;
+    border-radius: 3px;
+}
+
+.col img{
+    width: 80%;
+    margin: 0 40px;
+    border: 3px solid #a276ff;
+    border-radius: 20px;
+    box-shadow: 3px 3px 15px black;
+}
+
+/* sidebar*/
+.logo{
+    margin-top: 25px;
+    width: 100%;
+}
+
+.logo img{
+    display: block;
+    width: 50%; /*этого не было, для масштабирования логотипа*/
+    margin: auto;
+}
+
+.menu{
+    margin-top: 25px;
+}
+
+.menu-sidbar{
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    list-style: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.menu-sidbar li{
+    margin-top: 10px;
+}
+
+.menu-sidbar li:hover{
+    margin-top: 10px;
+    color: #a276ff;
+}
+
+.menu-sidbar li:hover::before{
+    /*content: ' >>> ';*/
+    content: ' ';
+    border:3px solid #a276ff;
+    position: absolute;
+    height: 18px;
+    left: 0;
+    border-radius: 0 10px 10px 0;
+}
+
+.menu-bottom{
+    margin-top: 500px;
+    color:  gainsboro;
+}
